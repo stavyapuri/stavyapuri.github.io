@@ -54,8 +54,8 @@
                     <h1 class="hero-name">Stavya Puri</h1>
                     <p class="hero-tagline">Graduate Researcher in <span class="highlight">Quantum Information</span> & <span class="highlight">Computer Science</span></p>
                     <p class="hero-description">
-                        I'm a dual-degree student at BITS Pilani pursuing an Integrated MSc. in Physics and B.Eng. in Computer Science.
-                        My research focuses on quantum batteries, quantum key distribution, and quantum information theory.
+                        I am a graduate student from BITS Pilani, where I pursued an Integrated MSc. in Physics and B.Eng. in Computer Science.
+                        My research interests lie in simulating quantum many-body systems using quantum information-theoretic tools and exploring their applications in quantum technologies, particularly quantum computing.
                     </p>
                     <div class="hero-cta">
                         <a href="#research" class="btn btn-primary">View Research</a>
@@ -91,10 +91,42 @@
                 </div>
                 <div class="hero-visual">
                     <div class="quantum-animation">
-                        <div class="orbit orbit-1"><div class="electron"></div></div>
-                        <div class="orbit orbit-2"><div class="electron"></div></div>
-                        <div class="orbit orbit-3"><div class="electron"></div></div>
-                        <div class="nucleus"></div>
+                        <!-- Spin Chain Lattice -->
+                        <div class="spin-chain">
+                            <div class="spin-site" data-spin="up">
+                                <div class="bloch-sphere">
+                                    <div class="spin-arrow"></div>
+                                </div>
+                            </div>
+                            <div class="entanglement-bond"></div>
+                            <div class="spin-site" data-spin="down">
+                                <div class="bloch-sphere">
+                                    <div class="spin-arrow"></div>
+                                </div>
+                            </div>
+                            <div class="entanglement-bond"></div>
+                            <div class="spin-site" data-spin="superposition">
+                                <div class="bloch-sphere">
+                                    <div class="spin-arrow"></div>
+                                </div>
+                            </div>
+                            <div class="entanglement-bond"></div>
+                            <div class="spin-site" data-spin="up">
+                                <div class="bloch-sphere">
+                                    <div class="spin-arrow"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Quantum State Labels -->
+                        <div class="state-labels">
+                            <span class="ket">|ψ⟩ = α|↑↓↑↑⟩ + β|↓↑↓↓⟩</span>
+                        </div>
+                        <!-- Entanglement Visualization -->
+                        <svg class="entanglement-curves" viewBox="0 0 320 100">
+                            <path class="entangle-path path-1" d="M40,50 Q120,10 200,50" />
+                            <path class="entangle-path path-2" d="M120,50 Q200,90 280,50" />
+                            <path class="entangle-path path-3" d="M40,50 Q160,100 280,50" />
+                        </svg>
                     </div>
                 </div>
             </div>
@@ -108,21 +140,23 @@
                     <div class="research-card">
                         <div class="research-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <circle cx="12" cy="12" r="8" stroke-dasharray="4 2"></circle>
+                                <path d="M12 2v2M12 20v2M2 12h2M20 12h2"></path>
+                                <path d="M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
                             </svg>
                         </div>
-                        <h3>Quantum Batteries</h3>
-                        <p>Investigating Floquet-driven quantum batteries with long-range interactions, demonstrating super-extensive scaling of maximum power.</p>
+                        <h3>Quantum Many-Body Physics & Simulations</h3>
+                        <p>Investigating strongly correlated quantum systems through large-scale numerical simulations, leveraging high-performance computing to study emergent phenomena in spin chains and lattice models.</p>
                     </div>
                     <div class="research-card">
                         <div class="research-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
                             </svg>
                         </div>
-                        <h3>Quantum Cryptography</h3>
-                        <p>Analyzing security proofs for Quantum Key Distribution protocols using information-theoretic definitions and entropic uncertainty principles.</p>
+                        <h3>Quantum Thermodynamics</h3>
+                        <p>Exploring thermodynamic processes at the quantum scale, including work extraction, heat transport, and energy storage in quantum batteries with applications to next-generation energy technologies.</p>
                     </div>
                     <div class="research-card">
                         <div class="research-icon">
@@ -132,17 +166,8 @@
                                 <circle cx="12" cy="12" r="2"></circle>
                             </svg>
                         </div>
-                        <h3>Quantum Sensing</h3>
-                        <p>Environmental scan on quantum sensors based on electron spin resonance, with focus on NV-Diamond sensors and their applications.</p>
-                    </div>
-                    <div class="research-card">
-                        <div class="research-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
-                            </svg>
-                        </div>
-                        <h3>Open Quantum Systems</h3>
-                        <p>Studying many-body spin chain models and quantum dynamics using Liouville Von-Neumann evolution and Lindblad equations.</p>
+                        <h3>Quantum Sensing & Metrology</h3>
+                        <p>Developing precision measurement techniques that harness quantum coherence and entanglement to surpass classical limits, with focus on NV-center magnetometry and atomic ensemble dynamics.</p>
                     </div>
                 </div>
             </div>
